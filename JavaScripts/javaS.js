@@ -1,6 +1,17 @@
 var isPlaying = false;
 var currentPlayingFm = 'dhaka_fm' ;
 
+if('serviceWorker' in navigator){
+    navigator.serviceWorker.register("JavaScripts/service_worker.js")
+    .then(function(registration) {
+        console.log('Registration successful, scope is:', registration.scope);
+      })
+      .catch(function(error) {
+        console.log('Service worker registration failed, error:', error);
+      });
+}
+
+
 function radio_today_function(){
     isPlaying = true;
     currentPlayingFm = 'radio_today';
@@ -13,7 +24,7 @@ function radio_today_function(){
     setTimeout(() => {
         document.getElementById("previous_button").style.background = "rgb(175, 175, 175)";
     }, 200);
-    document.getElementById("pause_play_img").src = "/pause_white_24dp.svg";
+    document.getElementById("pause_play_img").src = "assets/icons/pause_white_24dp.svg";
 }
 
 function dhaka_fm_function(){
@@ -28,13 +39,13 @@ function dhaka_fm_function(){
     setTimeout(() => {
         document.getElementById("next_button").style.background = "rgb(175, 175, 175)";
     }, 200);
-    document.getElementById("pause_play_img").src = "/pause_white_24dp.svg";
+    document.getElementById("pause_play_img").src = "assets/icons/pause_white_24dp.svg";
 }
 
 function pause_or_play(){
     if(isPlaying){
         document.getElementById(currentPlayingFm).pause();
-        document.getElementById("pause_play_img").src = "/play_arrow_white_24dp.svg";
+        document.getElementById("pause_play_img").src = "assets/icons/play_arrow_white_24dp.svg";
         document.getElementById("play_pause_button").style.background = "rgba(175,175,175, 0.3)";
         setTimeout(() => {
             document.getElementById("play_pause_button").style.background = "rgb(175, 175, 175)";
@@ -42,7 +53,7 @@ function pause_or_play(){
     }
     else if(isPlaying == false){
         document.getElementById(currentPlayingFm).play();
-        document.getElementById("pause_play_img").src = "/pause_white_24dp.svg";
+        document.getElementById("pause_play_img").src = "assets/icons/pause_white_24dp.svg";
         document.getElementById("play_pause_button").style.background = "rgba(175,175,175, 0.3)";
         setTimeout(() => {
             document.getElementById("play_pause_button").style.background = "rgb(175, 175, 175)";

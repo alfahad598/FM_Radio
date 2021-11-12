@@ -1,0 +1,16 @@
+{
+    "short_name" : "Online FM",
+    "name" : "Online FM radio",
+    "description" : "All online radio togather in one app",
+    "display" : "standalone",
+    "orientation" :"portrait-primary",
+    "start_url": "/index.html",
+    "background_color": "#3367D6",
+    "scope": "/",
+    "theme_color": "#3367D6",
+    "icons" : [{
+        "src" : "assets/images/radio.png",
+        "type" : "image/png",
+        "sizes" : "512x512"
+    }]
+}

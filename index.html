@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="/radio_white_24dp.svg" type="image/x-icon">
+    <title>Online Radio</title>
+    <link rel="stylesheet" href="Styles/style.css">
+    <link rel="shortcut icon" href="assets/icons/radio_white_24dp.svg" type="image/x-icon">
+    <link rel="manifest" href="manifest.json">
 </head>
 <body>
   
@@ -39,7 +40,7 @@
             NOW PLAYING
           </div>
           <div id="track_name_id" class="track_name">
-            the mid night fm
+            The mid night fm
           </div>
           <div id="fm_name_id" class="fm_name">
             Dhaka FM
@@ -49,64 +50,20 @@
 
       <div class="button_controller">
         <div id="previous_button" class="previous" onclick="radio_today_function()" >
-          <img src="/skip_previous_white_24dp.svg" alt="" srcset="">
+          <img src="assets/icons/skip_previous_white_24dp.svg" alt="" srcset="">
         </div>
 
         <div id="play_pause_button" class="pause_play" onclick="pause_or_play()" >
-          <img id="pause_play_img" src="/play_arrow_white_24dp.svg" alt="" srcset="">
+          <img id="pause_play_img" src="assets/icons/play_arrow_white_24dp.svg" alt="" srcset="">
         </div>
 
         <div id="next_button" class="next" onclick="dhaka_fm_function()">
-          <img src="/skip_next_white_24dp.svg" alt="" srcset="">
+          <img src="assets/icons/skip_next_white_24dp.svg" alt="" srcset="">
         </div>
       </div>
     </div>
   </div>
-<!--
 
-
-<div class="radio">
-      <div class="display">
-        <div class="inner_display">
-          <div class="fm">
-             FM
-          </div>
-          <div id="frequency" class="Hertz">
-            90.4
-          </div>
-          <div class="mhz">
-            MHz
-          </div>
-        </div>
-        <div class="side_display">
-          
-          <div class="now_playing">
-            NOW PLAYING
-          </div>
-          <div id="track_name_id" class="track_name">
-            the mid night fm
-          </div>
-          <div id="fm_name_id" class="fm_name">
-            Dhaka FM
-          </div>
-        </div>
-      </div>
-
-      <div class="button_controller">
-        <div id="previous_button" class="previous" onclick="radio_today_function()" >
-          <img src="/skip_previous_white_24dp.svg" alt="" srcset="">
-        </div>
-
-        <div id="play_pause_button" class="pause_play" onclick="pause_or_play()" >
-          <img id="pause_play_img" src="/play_arrow_white_24dp.svg" alt="" srcset="">
-        </div>
-
-        <div id="next_button" class="next" onclick="dhaka_fm_function()">
-          <img src="/skip_next_white_24dp.svg" alt="" srcset="">
-        </div>
-      </div>
-</div>
--->
-  <script src="/javaS.js"></script>
+  <script src="JavaScripts/javaS.js"></script>
 </body>
 </html>
