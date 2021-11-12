@@ -66,6 +66,7 @@ body{
     font-weight: bold;
     font-family: sans-serif;
     padding-left: 8px;
+    padding-top: 1px;
 }
 .Hertz{
     display: flex;
