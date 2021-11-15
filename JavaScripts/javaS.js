@@ -32,7 +32,7 @@ function dhaka_fm_function(){
     currentPlayingFm = 'dhaka_fm';
     document.getElementById('radio_today').pause();
     document.getElementById('dhaka_fm').play();
-    document.getElementById('frequency').innerText = "90.6";
+    document.getElementById('frequency').innerText = "90.4";
     document.getElementById("track_name_id").innerHTML = "The mid night fm";
     document.getElementById("fm_name_id").innerHTML = "Dhaka FM";
     document.getElementById("next_button").style.background = "rgba(175,175,175, 0.3)";
